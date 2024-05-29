@@ -1,7 +1,7 @@
 // @flow
 // (Copyright) Confluent, Inc.
 import type { $Request, $Response } from 'express';
-import request from 'request';
+import { got as request } from 'got';
 import { pick, omit } from 'lodash';
 
 import { defaultBodyHandler } from './DefaultBodyHandler';

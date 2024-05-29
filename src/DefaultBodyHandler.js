@@ -3,7 +3,7 @@
 import type { $Request } from 'express';
 import bodyParser from 'body-parser';
 import streamify from 'stream-array';
-import request from 'request';
+import { got as request } from 'got';
 
 import { logger } from './utils';
 import { type BodyHandler } from './types';

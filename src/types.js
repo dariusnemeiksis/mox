@@ -6,7 +6,7 @@ import http from 'http';
 import https from 'https';
 import stream from 'stream';
 
-import request from 'request';
+import { got as request } from 'got';
 import type { $Application, $Request, $Response, NextFunction } from 'express';
 
 export type ActionsOptions = {

@@ -2,7 +2,7 @@
 // (Copyright) Confluent, Inc.
 import http from 'http';
 
-import request from 'request';
+import { got as request } from 'got';
 
 type RequestType = { body: any, response: http.IncomingMessage };
 export const getRequest = (targetUrl: string, url: string): Promise<RequestType> => {
